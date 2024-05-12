@@ -1,0 +1,165 @@
+
+
+body::before{
+    display: block;
+    content:'' ;
+    height:70px;
+}
+
+/* navbar styling */
+.navbar{
+    background-color:rgba(0, 0, 0, 0.8);
+    backdrop-filter:blur(5px);
+}
+
+.navbar-brand{
+    /* display:flex; */
+    color: white;
+    font-weight:bolder;
+    transform:translate(0%, 0%) ;
+    /* font-family:Georgia, 'Times New Roman', Times, serif; */
+    text-decoration: none;
+    /* align-items:last baseline; */
+    text-shadow: 0 0 10px blue;
+    font-size:35px;
+}
+
+.navbar-brand:after{
+    content: attr(data-text);
+    position: absolute;
+    z-index: -1;
+    color: blue;
+    filter: blur(50px);
+    -webkit-filter: blur(50px);
+}
+
+.nav-item .nav-link{
+    color:white;
+}
+
+.navbar-nav li a{
+    transition: all 1ms;
+    -webkit-transition: all 1ms;
+    -moz-transition: all 1ms;
+    -ms-transition: all 1ms;
+    -o-transition: all 1ms;
+}
+
+.navbar-nav li a:hover{
+    color: aqua;
+}
+
+.dropdown-menu{
+    background-color:rgba(0, 0, 0, 0.8);
+    backdrop-filter:blur(5px);
+}
+
+.dropdown-menu li a{
+    color: white;
+}
+
+.dropdown-menu li a:hover{
+    background-color:gray;
+}
+
+/* showcase styling */
+
+.lnimg{
+    border-radius:10px;
+    -webkit-border-radius:10px;
+    -moz-border-radius:10px;
+    -ms-border-radius:10px;
+    -o-border-radius:10px;
+}
+
+.showctn{
+    background-color: blue;
+    color: white;
+}
+
+.showctn:hover{
+    background-color:rgb(14, 118, 209);
+}
+
+
+/* styling newsletter */
+.newsctn{
+    background-color: blue;
+}
+
+@media(min-width:768px) {
+    .news-input{
+        width: 50%;
+    }
+}
+
+
+/* box styling */
+.boxctn{
+    background-color: blue;
+    color: white;
+}
+
+.boxctn2{
+    background-color: black;
+    color: white;
+}
+
+.boxctn:hover{
+    background-color:black;
+}
+
+.boxctn2:hover{
+    background-color:blue;
+}
+
+  /* learn styling */
+.lnctn{
+    background-color: black;
+}
+
+.lnctn:hover{
+    background-color: blue;
+}
+
+.lnctn2{
+    background-color:blue;
+}
+
+.lnctn2:hover{
+    background-color:black;
+}
+
+
+.inctn{
+    background-color: rgba(7, 7, 228, 0.856);
+}
+
+
+.bluectn{
+    font-size:50px;
+    font-family:Geneva, Verdana, sans-serif;
+}
+
+
+/* contact and map styling */
+#map{
+    width:100%;
+    height:275px;
+}
+
+#map img{
+    object-position: center;
+    object-fit:cover;
+    border-radius:10px;
+    -webkit-border-radius:10px;
+    -moz-border-radius:10px;
+    -ms-border-radius:10px;
+    -o-border-radius:10px;
+}
+
+/* modal styling */
+.mdctn{
+    background-color:rgba(0, 0, 0, 0.09);
+    backdrop-filter:blur(5px);
+}
